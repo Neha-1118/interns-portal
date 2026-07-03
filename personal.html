@@ -1,72 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
-<header>
+    <!-- HEADER -->
 
-<div class="logo">
-    Internship Portal
-</div>
+    <header class="header">
 
-<nav>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="personal.html" class="active">Personal Details</a></li>
-<li><a href="education.html">Education</a></li>
-<li><a href="experience.html">Work Experience</a></li>
-<li><a href="skills.html">Skills & Resume</a></li>
-</ul>
-</nav>
+        <div class="logo">
+            Internship Portal
+        </div>
 
-</header>
+        <div class="user">
+            Welcome, Applicant
+        </div>
 
-<div class="container">
+    </header>
 
-<h1>Personal Details</h1>
+    <!-- SIDEBAR -->
 
-<!-- Personal Detail Form Here -->
- <div class="container">
+    <aside class="sidebar">
 
-<h1>Personal Details</h1>
+        <ul>
 
-<form>
+            <li><a href="index.html">🏠 Dashboard</a></li>
 
-<label>Full Name</label>
-<input type="text" placeholder="Enter your full name">
+            <li><a href="personal.html" class="active">👤 Personal Details</a></li>
 
-<label>Email Address</label>
-<input type="email" placeholder="Enter your email">
+            <li><a href="education.html">🎓 Education</a></li>
 
-<label>Phone Number</label>
-<input type="tel" placeholder="Enter your phone number">
+            <li><a href="experience.html">💼 Work Experience</a></li>
 
-<label>Date of Birth</label>
-<input type="date">
+            <li><a href="skills.html">💻 Skills</a></li>
 
-<label>Gender</label>
-<select>
-    <option>Select Gender</option>
-    <option>Male</option>
-    <option>Female</option>
-    <option>Other</option>
-</select>
+            <li><a href="resume.html">📄 Resume</a></li>
 
-<label>Address</label>
-<textarea placeholder="Enter your address"></textarea>
+        </ul>
 
-<label>City</label>
-<input type="text" placeholder="Enter city">
+    </aside>
 
-<label>State</label>
-<input type="text" placeholder="Enter state">
+    <!-- CONTENT -->
 
-<label>PIN Code</label>
-<input type="text" placeholder="Enter PIN Code">
+    <main class="content">
 
-<button>Save & Next</button>
+        <h1 class="page-title">Personal Details</h1>
 
-</form>
+        <p class="page-subtitle">
+            Please provide your personal information accurately.
+        </p>
 
-</div>
+        <div class="card">
 
-</div>
+            <form>
+
+                <div class="row">
+
+                    <div class="col form-group">
+                        <label>First Name</label>
+                        <input type="text" placeholder="Enter first name">
+                    </div>
+
+                    <div class="col form-group">
+                        <label>Last Name</label>
+                        <input type="text" placeholder="Enter last name">
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col form-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="Enter email">
+                    </div>
+
+                    <div class="col form-group">
+                        <label>Mobile Number</label>
+                        <input type="tel" placeholder="Enter mobile number">
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col form-group">
+                        <label>Date of Birth</label>
+                        <input type="date">
+                    </div>
+
+                    <div class="col form-group">
+                        <label>Gender</label>
+
+                        <select>
+                            <option>Select Gender</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Address</label>
+
+                    <textarea placeholder="Enter your address"></textarea>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col form-group">
+                        <label>City</label>
+                        <input type="text" placeholder="Enter city">
+                    </div>
+
+                    <div class="col form-group">
+                        <label>State</label>
+                        <input type="text" placeholder="Enter state">
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col form-group">
+                        <label>PIN Code</label>
+                        <input type="text" placeholder="Enter PIN Code">
+                    </div>
+
+                    <div class="col form-group">
+                        <label>Nationality</label>
+                        <input type="text" placeholder="Enter nationality">
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col form-group">
+                        <label>Aadhaar Number</label>
+                        <input type="text" placeholder="XXXX XXXX XXXX">
+                    </div>
+
+                    <div class="col form-group">
+                        <label>LinkedIn Profile</label>
+                        <input type="url" placeholder="https://linkedin.com/in/yourprofile">
+                    </div>
+
+                </div>
+
+                <div style="display:flex; justify-content:space-between; margin-top:20px;">
+
+                    <a href="index.html" class="btn btn-secondary">
+                        ← Back
+                    </a>
+
+                    <a href="education.html" class="btn">
+                        Save & Next →
+                    </a>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>
 
 </body>
+</html>

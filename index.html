@@ -3,34 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Internship Portal</title>
+    <title>Internship Portal | Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
+    <!-- ================= HEADER ================= -->
 
-    <div class="logo">
-        Internship Portal
-    </div>
+    <header class="header">
 
-    <nav>
+        <div class="logo">
+            Internship Portal
+        </div>
+
+        <div class="user">
+            Welcome, Applicant
+        </div>
+
+    </header>
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
         <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="personal.html">Personal Details</a></li>
-            <li><a href="education.html">Education</a></li>
-            <li><a href="experience.html">Work Experience</a></li>
-            <li><a href="skills.html">Skills & Resume</a></li>
+
+            <li>
+                <a href="index.html" class="active">
+                    🏠 Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="personal.html">
+                    👤 Personal Details
+                </a>
+            </li>
+
+            <li>
+                <a href="education.html">
+                    🎓 Education
+                </a>
+            </li>
+
+            <li>
+                <a href="experience.html">
+                    💼 Work Experience
+                </a>
+            </li>
+
+            <li>
+                <a href="skills.html">
+                    💻 Skills
+                </a>
+            </li>
+
+            <li>
+                <a href="resume.html">
+                    📄 Resume
+                </a>
+            </li>
+
         </ul>
-    </nav>
 
-</header>
+    </aside>
 
-<div class="home">
+    <!-- ================= CONTENT ================= -->
 
-    <!-- Keep Blank for now -->
+    <main class="content">
 
-</div>
+        <h1 class="page-title">
+            Dashboard
+        </h1>
+
+        <p class="page-subtitle">
+            Welcome to the Internship Application Portal. Complete all sections before submitting your application.
+        </p>
+
+        <!-- Dashboard Cards -->
+
+        <div class="dashboard">
+
+            <div class="box">
+                <h3>👤 Personal</h3>
+                <p>Fill your personal information.</p>
+            </div>
+
+            <div class="box">
+                <h3>🎓 Education</h3>
+                <p>Add your academic details.</p>
+            </div>
+
+            <div class="box">
+                <h3>💼 Experience</h3>
+                <p>Internships, training and projects.</p>
+            </div>
+
+            <div class="box">
+                <h3>💻 Skills</h3>
+                <p>Technical & Soft Skills.</p>
+            </div>
+
+        </div>
+
+        <br>
+
+        <!-- Progress -->
+
+        <div class="card">
+
+            <h2>Application Progress</h2>
+
+            <ul class="progress">
+
+                <li>⬜ Personal Details</li>
+
+                <li>⬜ Education Details</li>
+
+                <li>⬜ Work Experience</li>
+
+                <li>⬜ Skills</li>
+
+                <li>⬜ Resume Upload</li>
+
+            </ul>
+
+        </div>
+
+        <!-- Instructions -->
+
+        <div class="card">
+
+            <h2>Instructions</h2>
+
+            <p>
+
+                Please complete each section carefully.
+
+                Ensure all information is accurate before submitting your application.
+
+                Keep your latest resume ready in PDF format.
+
+            </p>
+
+            <br>
+
+            <a href="personal.html" class="btn">
+                Start Application →
+            </a>
+
+        </div>
+
+        <div class="footer">
+
+            © 2026 Internship Portal
+
+        </div>
+
+    </main>
 
 </body>
 </html>

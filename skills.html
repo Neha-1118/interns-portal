@@ -1,29 +1,211 @@
-<div class="container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<h1>Skills</h1>
+<!-- ================= HEADER ================= -->
 
-<form>
+<header class="header">
 
-<label>Technical Skills</label>
-<textarea placeholder="HTML, CSS, Java, SQL"></textarea>
+    <div class="logo">
+        Internship Portal
+    </div>
 
-<label>Soft Skills</label>
-<textarea placeholder="Communication, Teamwork"></textarea>
+    <div class="user">
+        Welcome, Applicant
+    </div>
 
-<label>Languages Known</label>
-<input type="text">
+</header>
 
-<label>LinkedIn Profile</label>
-<input type="url">
+<!-- ================= SIDEBAR ================= -->
 
-<label>GitHub Profile</label>
-<input type="url">
+<aside class="sidebar">
 
-<label>Portfolio Website</label>
-<input type="url">
+    <ul>
 
-<button>Save & Next</button>
+        <li><a href="index.html">🏠 Dashboard</a></li>
 
-</form>
+        <li><a href="personal.html">👤 Personal Details</a></li>
 
-</div>
+        <li><a href="education.html">🎓 Education</a></li>
+
+        <li><a href="experience.html">💼 Work Experience</a></li>
+
+        <li><a href="skills.html" class="active">💻 Skills</a></li>
+
+        <li><a href="resume.html">📄 Resume</a></li>
+
+    </ul>
+
+</aside>
+
+<!-- ================= CONTENT ================= -->
+
+<main class="content">
+
+    <h1 class="page-title">Skills & Professional Profile</h1>
+
+    <p class="page-subtitle">
+        Add your skills, certifications, languages and professional profiles.
+    </p>
+
+    <form>
+
+        <!-- Technical Skills -->
+
+        <div class="card">
+
+            <h2>Technical Skills</h2>
+
+            <br>
+
+            <div class="form-group">
+
+                <label>Programming Languages</label>
+
+                <input type="text"
+                placeholder="Example: Java, Python, C++, JavaScript">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Web Technologies</label>
+
+                <input type="text"
+                placeholder="HTML, CSS, Bootstrap, React">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Database</label>
+
+                <input type="text"
+                placeholder="MySQL, Oracle, MongoDB">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Tools & Software</label>
+
+                <input type="text"
+                placeholder="VS Code, Git, GitHub, Eclipse">
+
+            </div>
+
+        </div>
+
+        <!-- Soft Skills -->
+
+        <div class="card">
+
+            <h2>Soft Skills</h2>
+
+            <br>
+
+            <textarea placeholder="Communication, Teamwork, Leadership, Time Management, Problem Solving"></textarea>
+
+        </div>
+
+        <!-- Languages -->
+
+        <div class="card">
+
+            <h2>Languages Known</h2>
+
+            <br>
+
+            <input type="text"
+            placeholder="English, Hindi, Marathi">
+
+        </div>
+
+        <!-- Certifications -->
+
+        <div class="card">
+
+            <h2>Certifications</h2>
+
+            <br>
+
+            <textarea placeholder="Mention certifications you've completed"></textarea>
+
+        </div>
+
+        <!-- Professional Profiles -->
+
+        <div class="card">
+
+            <h2>Professional Profiles</h2>
+
+            <br>
+
+            <div class="form-group">
+
+                <label>GitHub Profile</label>
+
+                <input type="url"
+                placeholder="https://github.com/username">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>LinkedIn Profile</label>
+
+                <input type="url"
+                placeholder="https://linkedin.com/in/username">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Portfolio Website (Optional)</label>
+
+                <input type="url"
+                placeholder="https://yourportfolio.com">
+
+            </div>
+
+        </div>
+
+        <!-- Career Objective -->
+
+        <div class="card">
+
+            <h2>Career Objective</h2>
+
+            <br>
+
+            <textarea
+            placeholder="Write a short career objective about yourself."></textarea>
+
+        </div>
+
+        <!-- Buttons -->
+
+        <div style="display:flex;justify-content:space-between;margin-top:20px;">
+
+            <a href="experience.html" class="btn btn-secondary">
+                ← Previous
+            </a>
+
+            <a href="resume.html" class="btn">
+                Save & Next →
+            </a>
+
+        </div>
+
+    </form>
+
+</main>
+
+</body>
+</html>

@@ -1,36 +1,208 @@
-<div class="container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Experience</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<h1>Work Experience</h1>
+<!-- ================= HEADER ================= -->
 
-<form>
+<header class="header">
 
-<label>Experience</label>
+    <div class="logo">
+        Internship Portal
+    </div>
 
-<select>
-<option>Fresher</option>
-<option>Experienced</option>
-</select>
+    <div class="user">
+        Welcome, Applicant
+    </div>
 
-<label>Company Name</label>
-<input type="text">
+</header>
 
-<label>Job Role</label>
-<input type="text">
+<!-- ================= SIDEBAR ================= -->
 
-<label>Duration</label>
-<input type="text">
+<aside class="sidebar">
 
-<label>Responsibilities</label>
-<textarea></textarea>
+    <ul>
 
-<label>Projects</label>
-<textarea></textarea>
+        <li><a href="index.html">🏠 Dashboard</a></li>
+        <li><a href="personal.html">👤 Personal Details</a></li>
+        <li><a href="education.html">🎓 Education</a></li>
+        <li><a href="experience.html" class="active">💼 Work Experience</a></li>
+        <li><a href="skills.html">💻 Skills</a></li>
+        <li><a href="resume.html">📄 Resume</a></li>
 
-<label>Certifications</label>
-<textarea></textarea>
+    </ul>
 
-<button>Save & Next</button>
+</aside>
 
-</form>
+<!-- ================= CONTENT ================= -->
 
-</div>
+<main class="content">
+
+    <h1 class="page-title">Work Experience</h1>
+
+    <p class="page-subtitle">
+        Provide your internship, training, work experience, projects, and achievements.
+    </p>
+
+    <form>
+
+        <!-- Experience Type -->
+
+        <div class="card">
+
+            <h2>Experience Information</h2>
+
+            <br>
+
+            <div class="form-group">
+
+                <label>Experience Type</label>
+
+                <select>
+                    <option>Fresher</option>
+                    <option>Experienced</option>
+                </select>
+
+            </div>
+
+        </div>
+
+        <!-- Company -->
+
+        <div class="card">
+
+            <h2>Internship / Company Details</h2>
+
+            <br>
+
+            <div class="row">
+
+                <div class="col form-group">
+                    <label>Company Name</label>
+                    <input type="text" placeholder="Company Name">
+                </div>
+
+                <div class="col form-group">
+                    <label>Job Title</label>
+                    <input type="text" placeholder="Software Developer Intern">
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col form-group">
+                    <label>Start Date</label>
+                    <input type="date">
+                </div>
+
+                <div class="col form-group">
+                    <label>End Date</label>
+                    <input type="date">
+                </div>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Responsibilities</label>
+
+                <textarea placeholder="Describe your work responsibilities"></textarea>
+
+            </div>
+
+        </div>
+
+        <!-- Projects -->
+
+        <div class="card">
+
+            <h2>Academic / Personal Projects</h2>
+
+            <br>
+
+            <div class="form-group">
+
+                <label>Project Title</label>
+
+                <input type="text" placeholder="Intern Management System">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Project Description</label>
+
+                <textarea placeholder="Briefly explain your project"></textarea>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Technologies Used</label>
+
+                <input type="text" placeholder="HTML, CSS, JavaScript, Java, SQL">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Project Link (Optional)</label>
+
+                <input type="url" placeholder="https://github.com/username/project">
+
+            </div>
+
+        </div>
+
+        <!-- Achievements -->
+
+        <div class="card">
+
+            <h2>Achievements & Certifications</h2>
+
+            <br>
+
+            <div class="form-group">
+
+                <label>Achievements</label>
+
+                <textarea placeholder="Mention awards, competitions, NCC, hackathons, etc."></textarea>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Certifications</label>
+
+                <textarea placeholder="Mention certifications you've completed"></textarea>
+
+            </div>
+
+        </div>
+
+        <!-- Navigation Buttons -->
+
+        <div style="display:flex;justify-content:space-between;margin-top:20px;">
+
+            <a href="education.html" class="btn btn-secondary">
+                ← Previous
+            </a>
+
+            <a href="skills.html" class="btn">
+                Save & Next →
+            </a>
+
+        </div>
+
+    </form>
+
+</main>
+
+</body>
+</html>

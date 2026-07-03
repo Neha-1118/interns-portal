@@ -1,46 +1,238 @@
-<div class="container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<h1>Education Details</h1>
+<!-- ================= HEADER ================= -->
 
-<form>
+<header class="header">
 
-<label>College Name</label>
-<input type="text">
+    <div class="logo">
+        Internship Portal
+    </div>
 
-<label>University</label>
-<input type="text">
+    <div class="user">
+        Welcome, Applicant
+    </div>
 
-<label>Degree</label>
-<input type="text">
+</header>
 
-<label>Branch / Specialization</label>
-<input type="text">
+<!-- ================= SIDEBAR ================= -->
 
-<label>Current Year</label>
+<aside class="sidebar">
 
-<select>
-<option>Select Year</option>
-<option>1st Year</option>
-<option>2nd Year</option>
-<option>3rd Year</option>
-<option>Final Year</option>
-<option>Graduate</option>
-</select>
+    <ul>
 
-<label>CGPA / Percentage</label>
-<input type="text">
+        <li><a href="index.html">🏠 Dashboard</a></li>
 
-<label>Graduation Year</label>
-<input type="number">
+        <li><a href="personal.html">👤 Personal Details</a></li>
 
-<label>12th Percentage</label>
-<input type="text">
+        <li><a href="education.html" class="active">🎓 Education</a></li>
 
-<label>10th Percentage</label>
-<input type="text">
+        <li><a href="experience.html">💼 Work Experience</a></li>
 
-<button>Save & Next</button>
+        <li><a href="skills.html">💻 Skills</a></li>
 
-</form>
+        <li><a href="resume.html">📄 Resume</a></li>
 
-</div>
+    </ul>
+
+</aside>
+
+<!-- ================= CONTENT ================= -->
+
+<main class="content">
+
+    <h1 class="page-title">Education Details</h1>
+
+    <p class="page-subtitle">
+        Enter your academic qualifications accurately.
+    </p>
+
+    <form>
+
+        <!-- Graduation -->
+
+        <div class="card">
+
+            <h2>Graduation Details</h2>
+
+            <br>
+
+            <div class="row">
+
+                <div class="col form-group">
+                    <label>College / University</label>
+                    <input type="text" placeholder="Enter college name">
+                </div>
+
+                <div class="col form-group">
+                    <label>University</label>
+                    <input type="text" placeholder="Enter university name">
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col form-group">
+                    <label>Degree</label>
+                    <input type="text" placeholder="BCA / B.Tech / B.Sc">
+                </div>
+
+                <div class="col form-group">
+                    <label>Branch / Specialization</label>
+                    <input type="text" placeholder="Computer Applications">
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col form-group">
+                    <label>Current Year</label>
+
+                    <select>
+                        <option>Select Year</option>
+                        <option>1st Year</option>
+                        <option>2nd Year</option>
+                        <option>3rd Year</option>
+                        <option>Final Year</option>
+                        <option>Graduate</option>
+                    </select>
+
+                </div>
+
+                <div class="col form-group">
+                    <label>Current Semester</label>
+                    <input type="number" placeholder="Semester">
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col form-group">
+                    <label>CGPA / Percentage</label>
+                    <input type="text" placeholder="Example: 8.75 CGPA">
+                </div>
+
+                <div class="col form-group">
+                    <label>Expected Graduation Year</label>
+                    <input type="number" placeholder="2027">
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <label>Current Backlogs</label>
+
+                <select>
+                    <option>No</option>
+                    <option>Yes</option>
+                </select>
+            </div>
+
+        </div>
+
+        <!-- Class 12 -->
+
+        <div class="card">
+
+            <h2>Class 12 Details</h2>
+
+            <br>
+
+            <div class="row">
+
+                <div class="col form-group">
+                    <label>Board</label>
+                    <input type="text" placeholder="CBSE / State Board">
+                </div>
+
+                <div class="col form-group">
+                    <label>School Name</label>
+                    <input type="text" placeholder="Enter school name">
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col form-group">
+                    <label>Percentage</label>
+                    <input type="text" placeholder="85%">
+                </div>
+
+                <div class="col form-group">
+                    <label>Passing Year</label>
+                    <input type="number" placeholder="2023">
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Class 10 -->
+
+        <div class="card">
+
+            <h2>Class 10 Details</h2>
+
+            <br>
+
+            <div class="row">
+
+                <div class="col form-group">
+                    <label>Board</label>
+                    <input type="text" placeholder="CBSE / State Board">
+                </div>
+
+                <div class="col form-group">
+                    <label>School Name</label>
+                    <input type="text" placeholder="Enter school name">
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col form-group">
+                    <label>Percentage</label>
+                    <input type="text" placeholder="90%">
+                </div>
+
+                <div class="col form-group">
+                    <label>Passing Year</label>
+                    <input type="number" placeholder="2021">
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Buttons -->
+
+        <div style="display:flex;justify-content:space-between;margin-top:20px;">
+
+            <a href="personal.html" class="btn btn-secondary">
+                ← Previous
+            </a>
+
+            <a href="experience.html" class="btn">
+                Save & Next →
+            </a>
+
+        </div>
+
+    </form>
+
+</main>
+
+</body>
+</html>

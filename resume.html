@@ -1,42 +1,198 @@
-<div class="container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume & Submit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<h1>Resume Upload</h1>
+<!-- ================= HEADER ================= -->
 
-<form>
+<header class="header">
 
-<label>Upload Resume</label>
-<input type="file">
+    <div class="logo">
+        Internship Portal
+    </div>
 
-<label>Upload Passport Size Photo</label>
-<input type="file">
+    <div class="user">
+        Welcome, Applicant
+    </div>
 
-<label>Upload Aadhaar / College ID</label>
-<input type="file">
+</header>
 
-<label>Why do you want this Internship?</label>
-<textarea></textarea>
+<!-- ================= SIDEBAR ================= -->
 
-<label>Available From</label>
-<input type="date">
+<aside class="sidebar">
 
-<label>Preferred Internship Mode</label>
+    <ul>
 
-<select>
-<option>Remote</option>
-<option>Hybrid</option>
-<option>On-site</option>
-</select>
+        <li><a href="index.html">🏠 Dashboard</a></li>
 
-<br><br>
+        <li><a href="personal.html">👤 Personal Details</a></li>
 
-<input type="checkbox" required>
+        <li><a href="education.html">🎓 Education</a></li>
 
-I declare that the information provided is correct.
+        <li><a href="experience.html">💼 Work Experience</a></li>
 
-<br><br>
+        <li><a href="skills.html">💻 Skills</a></li>
 
-<button type="submit">Submit Application</button>
+        <li><a href="resume.html" class="active">📄 Resume & Submit</a></li>
 
-</form>
+    </ul>
 
-</div>
+</aside>
+
+<!-- ================= CONTENT ================= -->
+
+<main class="content">
+
+    <h1 class="page-title">Resume & Final Submission</h1>
+
+    <p class="page-subtitle">
+        Upload your required documents and review your application before submitting.
+    </p>
+
+    <form>
+
+        <!-- Resume Upload -->
+
+        <div class="card">
+
+            <h2>Resume Upload</h2>
+
+            <br>
+
+            <div class="form-group">
+
+                <label>Upload Resume (PDF)</label>
+
+                <input type="file" accept=".pdf">
+
+            </div>
+
+        </div>
+
+        <!-- Documents -->
+
+        <div class="card">
+
+            <h2>Additional Documents</h2>
+
+            <br>
+
+            <div class="form-group">
+
+                <label>Passport Size Photo</label>
+
+                <input type="file" accept="image/*">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Government ID Proof</label>
+
+                <input type="file" accept=".pdf,.jpg,.jpeg,.png">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Provisional Certificate / Degree (Optional)</label>
+
+                <input type="file" accept=".pdf,.jpg,.jpeg,.png">
+
+            </div>
+
+        </div>
+
+        <!-- Review -->
+
+        <div class="card">
+
+            <h2>Application Checklist</h2>
+
+            <br>
+
+            <table>
+
+                <tr>
+                    <th>Section</th>
+                    <th>Status</th>
+                </tr>
+
+                <tr>
+                    <td>Personal Details</td>
+                    <td>✔ Completed</td>
+                </tr>
+
+                <tr>
+                    <td>Education</td>
+                    <td>✔ Completed</td>
+                </tr>
+
+                <tr>
+                    <td>Work Experience</td>
+                    <td>✔ Completed</td>
+                </tr>
+
+                <tr>
+                    <td>Skills</td>
+                    <td>✔ Completed</td>
+                </tr>
+
+                <tr>
+                    <td>Documents Uploaded</td>
+                    <td>Pending</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <!-- Declaration -->
+
+        <div class="card">
+
+            <h2>Declaration</h2>
+
+            <br>
+
+            <label>
+
+                <input type="checkbox">
+
+                I hereby declare that all the information provided in this application is true and correct to the best of my knowledge.
+
+            </label>
+
+        </div>
+
+        <!-- Buttons -->
+
+        <div style="display:flex;justify-content:space-between;margin-top:20px;">
+
+            <a href="skills.html" class="btn btn-secondary">
+                ← Previous
+            </a>
+
+            <button type="submit" class="btn">
+                Submit Application
+            </button>
+
+        </div>
+
+    </form>
+
+    <div class="footer">
+
+        © 2026 Internship Portal | All Rights Reserved
+
+    </div>
+
+</main>
+
+</body>
+</html>
