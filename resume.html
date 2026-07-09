@@ -6,7 +6,7 @@
     <title>Resume & Submit</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body data-page="resume">
 
 <!-- ================= HEADER ================= -->
 
@@ -54,7 +54,7 @@
         Upload your required documents and review your application before submitting.
     </p>
 
-    <form>
+    <form id="resumeForm">
 
         <!-- Resume Upload -->
 
@@ -68,7 +68,7 @@
 
                 <label>Upload Resume (PDF)</label>
 
-                <input type="file" accept=".pdf">
+                <input type="file" id="resume-upload" name="resume" accept=".pdf">
 
             </div>
 
@@ -86,7 +86,7 @@
 
                 <label>Passport Size Photo</label>
 
-                <input type="file" accept="image/*">
+                <input type="file" id="photo-upload" name="photo" accept="image/*">
 
             </div>
 
@@ -94,7 +94,7 @@
 
                 <label>Government ID Proof</label>
 
-                <input type="file" accept=".pdf,.jpg,.jpeg,.png">
+                <input type="file" id="id-upload" name="idProof" accept=".pdf,.jpg,.jpeg,.png">
 
             </div>
 
@@ -102,7 +102,7 @@
 
                 <label>Provisional Certificate / Degree (Optional)</label>
 
-                <input type="file" accept=".pdf,.jpg,.jpeg,.png">
+                <input type="file" id="cert-upload" name="cert" data-optional accept=".pdf,.jpg,.jpeg,.png">
 
             </div>
 
@@ -123,29 +123,29 @@
                     <th>Status</th>
                 </tr>
 
-                <tr>
+                <tr id="row-personal">
                     <td>Personal Details</td>
-                    <td>✔ Completed</td>
+                    <td class="status-cell">Pending</td>
                 </tr>
 
-                <tr>
+                <tr id="row-education">
                     <td>Education</td>
-                    <td>✔ Completed</td>
+                    <td class="status-cell">Pending</td>
                 </tr>
 
-                <tr>
+                <tr id="row-experience">
                     <td>Work Experience</td>
-                    <td>✔ Completed</td>
+                    <td class="status-cell">Pending</td>
                 </tr>
 
-                <tr>
+                <tr id="row-skills">
                     <td>Skills</td>
-                    <td>✔ Completed</td>
+                    <td class="status-cell">Pending</td>
                 </tr>
 
-                <tr>
+                <tr id="row-documents">
                     <td>Documents Uploaded</td>
-                    <td>Pending</td>
+                    <td class="status-cell">Pending</td>
                 </tr>
 
             </table>
@@ -162,7 +162,7 @@
 
             <label>
 
-                <input type="checkbox">
+                <input type="checkbox" id="declaration-check">
 
                 I hereby declare that all the information provided in this application is true and correct to the best of my knowledge.
 
@@ -186,6 +186,18 @@
 
     </form>
 
+    <div id="submit-message" class="card" style="display:none;">
+
+        <h2>✔ Application Submitted</h2>
+
+        <p>
+            A summary document has been downloaded to your device. If any section above still shows
+            "Pending," those fields were left blank — please review the summary and update your
+            application when you can.
+        </p>
+
+    </div>
+
     <div class="footer">
 
         © 2026 Internship Portal | All Rights Reserved
@@ -193,6 +205,8 @@
     </div>
 
 </main>
+
+<script src="script.js"></script>
 
 </body>
 </html>

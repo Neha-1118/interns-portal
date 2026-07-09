@@ -6,7 +6,7 @@
     <title>Work Experience</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body data-page="experience">
 
 <!-- ================= HEADER ================= -->
 
@@ -49,7 +49,7 @@
         Provide your internship, training, work experience, projects, and achievements.
     </p>
 
-    <form>
+    <form id="experienceForm">
 
         <!-- Experience Type -->
 
@@ -63,7 +63,7 @@
 
                 <label>Experience Type</label>
 
-                <select>
+                <select name="expType">
                     <option>Fresher</option>
                     <option>Experienced</option>
                 </select>
@@ -84,12 +84,12 @@
 
                 <div class="col form-group">
                     <label>Company Name</label>
-                    <input type="text" placeholder="Company Name">
+                    <input type="text" name="companyName" placeholder="Company Name">
                 </div>
 
                 <div class="col form-group">
                     <label>Job Title</label>
-                    <input type="text" placeholder="Software Developer Intern">
+                    <input type="text" name="jobTitle" placeholder="Software Developer Intern">
                 </div>
 
             </div>
@@ -98,12 +98,12 @@
 
                 <div class="col form-group">
                     <label>Start Date</label>
-                    <input type="date">
+                    <input type="date" name="startDate">
                 </div>
 
                 <div class="col form-group">
                     <label>End Date</label>
-                    <input type="date">
+                    <input type="date" name="endDate">
                 </div>
 
             </div>
@@ -112,7 +112,7 @@
 
                 <label>Responsibilities</label>
 
-                <textarea placeholder="Describe your work responsibilities"></textarea>
+                <textarea name="responsibilities" placeholder="Describe your work responsibilities"></textarea>
 
             </div>
 
@@ -130,7 +130,7 @@
 
                 <label>Project Title</label>
 
-                <input type="text" placeholder="Intern Management System">
+                <input type="text" name="projectTitle" placeholder="Intern Management System">
 
             </div>
 
@@ -138,7 +138,7 @@
 
                 <label>Project Description</label>
 
-                <textarea placeholder="Briefly explain your project"></textarea>
+                <textarea name="projectDescription" placeholder="Briefly explain your project"></textarea>
 
             </div>
 
@@ -146,7 +146,7 @@
 
                 <label>Technologies Used</label>
 
-                <input type="text" placeholder="HTML, CSS, JavaScript, Java, SQL">
+                <input type="text" name="technologies" placeholder="HTML, CSS, JavaScript, Java, SQL">
 
             </div>
 
@@ -154,7 +154,7 @@
 
                 <label>Project Link (Optional)</label>
 
-                <input type="url" placeholder="https://github.com/username/project">
+                <input type="url" name="projectLink" data-optional placeholder="https://github.com/username/project">
 
             </div>
 
@@ -172,7 +172,7 @@
 
                 <label>Achievements</label>
 
-                <textarea placeholder="Mention awards, competitions, NCC, hackathons, etc."></textarea>
+                <textarea name="achievements" placeholder="Mention awards, competitions, NCC, hackathons, etc."></textarea>
 
             </div>
 
@@ -180,7 +180,7 @@
 
                 <label>Certifications</label>
 
-                <textarea placeholder="Mention certifications you've completed"></textarea>
+                <textarea name="certificationsExp" placeholder="Mention certifications you've completed"></textarea>
 
             </div>
 
@@ -194,7 +194,7 @@
                 ← Previous
             </a>
 
-            <a href="skills.html" class="btn">
+            <a href="skills.html" id="save-next" class="btn">
                 Save & Next →
             </a>
 
@@ -203,6 +203,8 @@
     </form>
 
 </main>
+
+<script src="script.js"></script>
 
 </body>
 </html>

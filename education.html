@@ -6,7 +6,7 @@
     <title>Education Details</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body data-page="education">
 
 <!-- ================= HEADER ================= -->
 
@@ -54,7 +54,7 @@
         Enter your academic qualifications accurately.
     </p>
 
-    <form>
+    <form id="educationForm">
 
         <!-- Graduation -->
 
@@ -68,12 +68,12 @@
 
                 <div class="col form-group">
                     <label>College / University</label>
-                    <input type="text" placeholder="Enter college name">
+                    <input type="text" name="college" placeholder="Enter college name">
                 </div>
 
                 <div class="col form-group">
                     <label>University</label>
-                    <input type="text" placeholder="Enter university name">
+                    <input type="text" name="university" placeholder="Enter university name">
                 </div>
 
             </div>
@@ -82,12 +82,12 @@
 
                 <div class="col form-group">
                     <label>Degree</label>
-                    <input type="text" placeholder="BCA / B.Tech / B.Sc">
+                    <input type="text" name="degree" placeholder="BCA / B.Tech / B.Sc">
                 </div>
 
                 <div class="col form-group">
                     <label>Branch / Specialization</label>
-                    <input type="text" placeholder="Computer Applications">
+                    <input type="text" name="branch" placeholder="Computer Applications">
                 </div>
 
             </div>
@@ -97,7 +97,7 @@
                 <div class="col form-group">
                     <label>Current Year</label>
 
-                    <select>
+                    <select name="currentYear">
                         <option>Select Year</option>
                         <option>1st Year</option>
                         <option>2nd Year</option>
@@ -110,7 +110,7 @@
 
                 <div class="col form-group">
                     <label>Current Semester</label>
-                    <input type="number" placeholder="Semester">
+                    <input type="number" name="currentSemester" placeholder="Semester">
                 </div>
 
             </div>
@@ -119,12 +119,12 @@
 
                 <div class="col form-group">
                     <label>CGPA / Percentage</label>
-                    <input type="text" placeholder="Example: 8.75 CGPA">
+                    <input type="text" name="cgpa" placeholder="Example: 8.75 CGPA">
                 </div>
 
                 <div class="col form-group">
                     <label>Expected Graduation Year</label>
-                    <input type="number" placeholder="2027">
+                    <input type="number" name="gradYear" placeholder="2027">
                 </div>
 
             </div>
@@ -132,7 +132,7 @@
             <div class="form-group">
                 <label>Current Backlogs</label>
 
-                <select>
+                <select name="backlogs">
                     <option>No</option>
                     <option>Yes</option>
                 </select>
@@ -152,12 +152,12 @@
 
                 <div class="col form-group">
                     <label>Board</label>
-                    <input type="text" placeholder="CBSE / State Board">
+                    <input type="text" name="board12" placeholder="CBSE / State Board">
                 </div>
 
                 <div class="col form-group">
                     <label>School Name</label>
-                    <input type="text" placeholder="Enter school name">
+                    <input type="text" name="school12" placeholder="Enter school name">
                 </div>
 
             </div>
@@ -166,12 +166,12 @@
 
                 <div class="col form-group">
                     <label>Percentage</label>
-                    <input type="text" placeholder="85%">
+                    <input type="text" name="percentage12" placeholder="85%">
                 </div>
 
                 <div class="col form-group">
                     <label>Passing Year</label>
-                    <input type="number" placeholder="2023">
+                    <input type="number" name="passingYear12" placeholder="2023">
                 </div>
 
             </div>
@@ -190,12 +190,12 @@
 
                 <div class="col form-group">
                     <label>Board</label>
-                    <input type="text" placeholder="CBSE / State Board">
+                    <input type="text" name="board10" placeholder="CBSE / State Board">
                 </div>
 
                 <div class="col form-group">
                     <label>School Name</label>
-                    <input type="text" placeholder="Enter school name">
+                    <input type="text" name="school10" placeholder="Enter school name">
                 </div>
 
             </div>
@@ -204,12 +204,12 @@
 
                 <div class="col form-group">
                     <label>Percentage</label>
-                    <input type="text" placeholder="90%">
+                    <input type="text" name="percentage10" placeholder="90%">
                 </div>
 
                 <div class="col form-group">
                     <label>Passing Year</label>
-                    <input type="number" placeholder="2021">
+                    <input type="number" name="passingYear10" placeholder="2021">
                 </div>
 
             </div>
@@ -224,7 +224,7 @@
                 ← Previous
             </a>
 
-            <a href="experience.html" class="btn">
+            <a href="experience.html" id="save-next" class="btn">
                 Save & Next →
             </a>
 
@@ -233,6 +233,8 @@
     </form>
 
 </main>
+
+<script src="script.js"></script>
 
 </body>
 </html>

@@ -6,7 +6,7 @@
     <title>Internship Portal | Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body data-page="index">
 
     <!-- ================= HEADER ================= -->
 
@@ -116,15 +116,15 @@
 
             <ul class="progress">
 
-                <li>⬜ Personal Details</li>
+                <li id="progress-personal" data-label="Personal Details">⬜ Personal Details</li>
 
-                <li>⬜ Education Details</li>
+                <li id="progress-education" data-label="Education Details">⬜ Education Details</li>
 
-                <li>⬜ Work Experience</li>
+                <li id="progress-experience" data-label="Work Experience">⬜ Work Experience</li>
 
-                <li>⬜ Skills</li>
+                <li id="progress-skills" data-label="Skills">⬜ Skills</li>
 
-                <li>⬜ Resume Upload</li>
+                <li id="progress-documents" data-label="Resume Upload">⬜ Resume Upload</li>
 
             </ul>
 
@@ -161,6 +161,8 @@
         </div>
 
     </main>
+
+    <script src="script.js"></script>
 
 </body>
 </html>

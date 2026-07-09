@@ -6,7 +6,7 @@
     <title>Skills</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body data-page="skills">
 
 <!-- ================= HEADER ================= -->
 
@@ -54,7 +54,7 @@
         Add your skills, certifications, languages and professional profiles.
     </p>
 
-    <form>
+    <form id="skillsForm">
 
         <!-- Technical Skills -->
 
@@ -68,7 +68,7 @@
 
                 <label>Programming Languages</label>
 
-                <input type="text"
+                <input type="text" name="programmingLanguages"
                 placeholder="Example: Java, Python, C++, JavaScript">
 
             </div>
@@ -77,7 +77,7 @@
 
                 <label>Web Technologies</label>
 
-                <input type="text"
+                <input type="text" name="webTechnologies"
                 placeholder="HTML, CSS, Bootstrap, React">
 
             </div>
@@ -86,7 +86,7 @@
 
                 <label>Database</label>
 
-                <input type="text"
+                <input type="text" name="database"
                 placeholder="MySQL, Oracle, MongoDB">
 
             </div>
@@ -95,7 +95,7 @@
 
                 <label>Tools & Software</label>
 
-                <input type="text"
+                <input type="text" name="tools"
                 placeholder="VS Code, Git, GitHub, Eclipse">
 
             </div>
@@ -110,7 +110,7 @@
 
             <br>
 
-            <textarea placeholder="Communication, Teamwork, Leadership, Time Management, Problem Solving"></textarea>
+            <textarea name="softSkills" placeholder="Communication, Teamwork, Leadership, Time Management, Problem Solving"></textarea>
 
         </div>
 
@@ -122,7 +122,7 @@
 
             <br>
 
-            <input type="text"
+            <input type="text" name="languages"
             placeholder="English, Hindi, Marathi">
 
         </div>
@@ -135,7 +135,7 @@
 
             <br>
 
-            <textarea placeholder="Mention certifications you've completed"></textarea>
+            <textarea name="certifications" placeholder="Mention certifications you've completed"></textarea>
 
         </div>
 
@@ -151,7 +151,7 @@
 
                 <label>GitHub Profile</label>
 
-                <input type="url"
+                <input type="url" name="github" data-optional
                 placeholder="https://github.com/username">
 
             </div>
@@ -160,7 +160,7 @@
 
                 <label>LinkedIn Profile</label>
 
-                <input type="url"
+                <input type="url" name="linkedinProfile" data-optional
                 placeholder="https://linkedin.com/in/username">
 
             </div>
@@ -169,7 +169,7 @@
 
                 <label>Portfolio Website (Optional)</label>
 
-                <input type="url"
+                <input type="url" name="portfolio" data-optional
                 placeholder="https://yourportfolio.com">
 
             </div>
@@ -184,7 +184,7 @@
 
             <br>
 
-            <textarea
+            <textarea name="careerObjective"
             placeholder="Write a short career objective about yourself."></textarea>
 
         </div>
@@ -197,7 +197,7 @@
                 ← Previous
             </a>
 
-            <a href="resume.html" class="btn">
+            <a href="resume.html" id="save-next" class="btn">
                 Save & Next →
             </a>
 
@@ -206,6 +206,8 @@
     </form>
 
 </main>
+
+<script src="script.js"></script>
 
 </body>
 </html>
